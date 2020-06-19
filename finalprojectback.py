@@ -45,8 +45,7 @@ def prediction(filename):
         
         model = tf.keras.models.load_model('finalprojectbangkit.h5')
         prediction = model.predict(my_image_re)
-
-        print(prediction)
+        
         
     
     return render_template('prediction.html', prediction=prediction)
