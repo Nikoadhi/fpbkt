@@ -45,10 +45,13 @@ def prediction(filename):
         
         model = tf.keras.models.load_model('finalprojectbangkit.h5')
         prediction = model.predict(my_image_re)
+        label = (prediction>0.5).astype(np.int)
+        CLASSES = ['CAR', 'BUS']
+        print(CLASSES[label[0][0]])
         
         
     
-    return render_template('prediction.html', prediction=prediction)
+    return render_template('prediction.html', classes=CLASSES[label[0][0]])
     
 
 if __name__ == '__main__':

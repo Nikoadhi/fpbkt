@@ -2,14 +2,23 @@
 <html>
 <head>
     <title>Bus or Car</title>
+    <style>
+      body {
+        background-image: url('https://cdn.motor1.com/images/mgl/eMk0p/s3/double-decker-bus-at-silverstone.jpg');
+        background-size: cover;
+      }
+      div {
+        background: white;
+      }
+    </style>
     
 </head>
 <body>
 <div id="maintext" style="position:absolute; margin:auto; width:700px; height:300px; text-align:center; top:0; bottom: 0; left: 0; right: 0;">
   <h1> YOUR PREDICTION RESULT</h1>
 
-    <p>The picture is </p>
-    <p>{{ prediction }}</p>
+    <p>Your Picture is Classified As</p>
+    <h1>{{ classes }}</h1>
     
 
 </div>
