@@ -5,5 +5,5 @@ Deployment by Nikolas A.P.
 Presentation by Nikolas A.P. and Ilham T.
 
 Issues :
-1. Deployment
+1. Slug Size
 2. Backend Accuracy
